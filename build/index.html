@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Калькулятор Мелви</title>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/calc.js" type="text/javascript"></script>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body style="font: 400 14px 'Open Sans', Arial, sans-serif;">
+        <div id="content" style="padding-right: 5px;">
+            <div id="input_color">
+                <p class="caption_group_color">Выберите материал потолка</p>
+                <p id="wall_item">
+                    <span id="lacquered_point" class="act">Глянцевый</span>
+                    <span id="mat_point">Матовый</span>
+                    <span id="sateen_point">Сатиновый</span>
+                </p>
+                <div class="input_color_wall">
+                    <div id="lacquered" class="pollo">
+                        <span class="_ffffff" id="L_01">
+                        </span>
+                        <span class="_f6feea" id="L_100">
+                        </span>
+                        <span class="_d3dfdc" id="L_103">
+                        </span>
+                        <span class="_d4e6d7" id="L_38">
+                        </span>
+                        <span class="_bec1af" id="L_53">
+                        </span>
+                        <span class="_9fbebe" id="L_54">
+                        </span>
+                        <span class="_839586" id="L_55">
+                        </span>
+                        <span class="_455258" id="L_28">
+                        </span>
+                        <span class="_000000" id="L_03">
+                        </span>
+                        <span class="_ffffdc" id="L_57">
+                        </span>
+                        <span class="_fff2bd" id="L_58">
+                        </span>
+                        <span class="_f6d08d" id="L_29">
+                        </span>
+                        <span class="_fdecbd" id="L_42">
+                        </span>
+                        <span class="_ffffe4" id="L_04">
+                        </span>
+                        <span class="_ebc68a" id="L_101">
+                        </span>
+                        <span class="_d0bd90" id="L_40">
+                        </span>
+                        <span class="_ffdcac" id="L_23">
+                        </span>
+                        <span class="_ffc194" id="L_79">
+                        </span>
+                        <span class="_ce5e52" id="L_08">
+                        </span>
+                        <span class="_ff9b82" id="L_24">
+                        </span>
+                        <span class="_ffe7db" id="L_30">
+                        </span>
+                        <span class="_ff2400" id="L_61">
+                        </span>
+                        <span class="_d90014" id="L_12">
+                        </span>
+                        <span class="_ffa5ce" id="L_09">
+                        </span>
+                        <span class="_e199ac" id="L_76">
+                        </span>
+                        <span class="_ff4a6b" id="L_74">
+                        </span>
+                        <span class="_f15790" id="L_75">
+                        </span>
+                        <span class="_ad0422" id="L_39">
+                        </span>
+                        <span class="_c41246" id="L_77">
+                        </span>
+                        <span class="_ff1f6c" id="L_10">
+                        </span>
+                        <span class="_a90d1d" id="L_11">
+                        </span>
+                        <span class="_360009" id="L_25">
+                        </span>
+                        <span class="_d7e2ff" id="L_27">
+                        </span>
+                        <span class="_c8c1ff" id="L_91">
+                        </span>
+                        <span class="_a07fc9" id="L_406">
+                        </span>
+                        <span class="_864c90" id="L_92">
+                        </span>
+                        <span class="_7f2e74" id="L_51">
+                        </span>
+                        <span class="_bfd8ef" id="L_44">
+                        </span>
+                        <span class="_8dc1dd" id="L_83">
+                        </span>
+                        <span class="_b3ebef" id="L_26">
+                        </span>
+                        <span class="_91d5d9" id="L_87">
+                        </span>
+                        <span class="_6cafdf" id="L_84">
+                        </span>
+                        <span class="_77d4ff" id="L_86">
+                        </span>
+                        <span class="_36ace4" id="L_17">
+                        </span>
+                        <span class="_4d85ce" id="L_37">
+                        </span>
+                        <span class="_2bbaee" id="L_85">
+                        </span>
+                        <span class="_218cfd" id="L_16">
+                        </span>
+                        <span class="_002ed3" id="L_36">
+                        </span>
+                        <span class="_282779" id="L_48">
+                        </span>
+                        <span class="_002f89" id="L_15">
+                        </span>
+                        <span class="_002890" id="L_88">
+                        </span>
+                        <span class="_000a36" id="L_14">
+                        </span>
+                        <span class="_c0efd8" id="L_33">
+                        </span>
+                        <span class="_85fffe" id="L_67">
+                        </span>
+                        <span class="_66ddbb" id="L_407">
+                        </span>
+                        <span class="_dfffff" id="L_65">
+                        </span>
+                        <span class="_81ac7a" id="L_41">
+                        </span>
+                        <span class="_046639" id="L_72">
+                        </span>
+                        <span class="_47b613" id="L_21">
+                        </span>
+                        <span class="_83cd46" id="L_68">
+                        </span>
+                        <span class="_a49b24" id="L_47">
+                        </span>
+                        <span class="_003720" id="L_19">
+                        </span>
+                        <span class="_00ae57" id="L_20">
+                        </span>
+                        <span class="_035463" id="L_35">
+                        </span>
+                        <span class="_00bea1" id="L_34">
+                        </span>
+                        <span class="_00ab34" id="L_70">
+                        </span>
+                        <span class="_06757b" id="L_102">
+                        </span>
+                        <span class="_19a7af" id="L_18">
+                        </span>
+                        <span class="_fff58a" id="L_05">
+                        </span>
+                        <span class="_ffe623" id="L_81">
+                        </span>
+                        <span class="_ffc900" id="L_31">
+                        </span>
+                        <span class="_ffce4c" id="L_06">
+                        </span>
+                        <span class="_ffaa00" id="L_82">
+                        </span>
+                        <span class="_ff8d19" id="L_07">
+                        </span>
+                        <span class="_ff6503" id="L_60">
+                        </span>
+                        <span class="_d74d00" id="L_62">
+                        </span>
+                        <span class="_aa1a06" id="L_50">
+                        </span>
+                        <span class="_d76700" id="L_59">
+                        </span>
+                        <span class="_ab6133" id="L_104">
+                        </span>
+                        <span class="_82300a" id="L_64">
+                        </span>
+                        <span class="_905029" id="L_63">
+                        </span>
+                        <span class="_1f0700" id="L_43">
+                        </span>
+                        <span class="_3b1c09" id="L_105">
+                        </span>
+                        <span class="_200101" id="L_45">
+                        </span>
+                    </div>
+                    <div id="mat" class="pollo">
+                        <span class="_ffffff" id="M_01">
+                        </span>
+                        <span class="_fdfaef" id="M_93">
+                        </span>
+                        <span class="_fcf7e8" id="M_99">
+                        </span>
+                        <span class="_fdfbed" id="M_112">
+                        </span>
+                        <span class="_fbf0cb" id="M_42">
+                        </span>
+                        <span class="_ffe4db" id="M_132">
+                        </span>
+                        <span class="_f4dad2" id="M_30">
+                        </span>
+                        <span class="_feebd6" id="M_22">
+                        </span>
+                        <span class="_ffe9b7" id="M_95">
+                        </span>
+                        <span class="_fefae2" id="M_04">
+                        </span>
+                        <span class="_fff4c0" id="M_58">
+                        </span>
+                        <span class="_ffe959" id="M_05">
+                        </span>
+                        <span class="_ffad18" id="M_82">
+                        </span>
+                        <span class="_96abad" id="M_55">
+                        </span>
+                        <span class="_c9ebfa" id="M_27">
+                        </span>
+                        <span class="_ebfbf7" id="M_65">
+                        </span>
+                        <span class="_c2e8af" id="M_96">
+                        </span>
+                        <span class="_5f665f" id="M_110">
+                        </span>
+                    </div>
+                    <div id="sateen" class="pollo">
+                        <span class="_ffffff" id="S_01">
+                        </span>
+                        <span class="_ffe6bc" id="S_58">
+                        </span>
+                        <span class="_ffe9cf" id="S_22">
+                        </span>
+                        <span class="_ffdccb" id="S_132">
+                        </span>
+                        <span class="_e9d1c8" id="S_30">
+                        </span>
+                        <span class="_fffee1" id="S_04">
+                        </span>
+                        <span class="_fbf6c5" id="S_57">
+                        </span>
+                        <span class="_ffd6ab" id="S_23">
+                        </span>
+                        <span class="_ffdeb4" id="S_133">
+                        </span>
+                        <span class="_f9f9e8" id="S_99">
+                        </span>
+                        <span class="_edfffd" id="S_65">
+                        </span>
+                        <span class="_edfbd6" id="S_131">
+                        </span>
+                        <span class="_88b26e" id="S_41">
+                        </span>
+                        <span class="_cde4fa" id="S_27">
+                        </span>
+                        <span class="_aae2fd" id="S_83">
+                        </span>
+                        <span class="_1c2862" id="S_97">
+                        </span>
+                        <span class="_df5941" id="S_08">
+                        </span>
+                    </div>
+                </div>
+                <div class="addition_colors">
+                    <div class="left-colors" style="margin-right: 6px;">
+                        <p class="caption_group_color caption_group_color_dop">
+                            Цвет стен:
+                        </p>
+                        <div class="input_color_ceiling">
+                            <span class="_ffffff" id="">
+                            </span>
+                            <span class="_f8f7ec" id="">
+                            </span>
+                            <span class="_e8efef" id="">
+                            </span>
+                            <span class="_e0e8e8" id="">
+                            </span>
+                            <span class="_c1c9ca" id="">
+                            </span>
+                            <span class="_093641" id="">
+                            </span>
+                            <span class="_221f1f" id="">
+                            </span>
+                            <span class="_af1116" id="">
+                            </span>
+                            <span class="_dd312c" id="">
+                            </span>
+                            <span class="_f3791f" id="">
+                            </span>
+                            <span class="_b4882c" id="">
+                            </span>
+                            <span class="_ffc10e" id="">
+                            </span>
+                            <span class="_859a3a" id="">
+                            </span>
+                            <span class="_00642d" id="">
+                            </span>
+                            <span class="_2ca096" id="">
+                            </span>
+                            <span class="_2d89c9" id="">
+                            </span>
+                            <span class="_2d3091" id="">
+                            </span>
+                            <span class="_6e6fb4" id="">
+                            </span>
+                            <span class="_90278e" id="">
+                            </span>
+                            <span class="_d33783" id="">
+                            </span>
+                            <span class="_f399c0" id="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-colors">
+                        <p class="caption_group_color">
+                            Цвет пола:
+                        </p>
+                        <div class="input_color_floor">
+                            <div id="carpeting">
+                                <span class="_ffffff" id="">
+                                </span>
+                                <span class="_edc9af" id="">
+                                </span>
+                                <span class="_927b5c" id="">
+                                </span>
+                                <span class="_785046" id="">
+                                </span>
+                                <span class="_9b4e3e" id="">
+                                </span>
+                                <span class="_a6a19b" id="">
+                                </span>
+                                <span class="_575652" id="">
+                                </span>
+                                <span class="_45403a" id="">
+                                </span>
+                                <span class="_76a9ac" id="">
+                                </span>
+                                <span class="_81a393" id="">
+                                </span>
+                                <span class="_73725e" id="">
+                                </span>
+                                <span class="_af1116" id="">
+                                </span>
+                                <span class="_2ca096" id="">
+                                </span>
+                                <span class="_00642d" id="">
+                                </span>
+                                <span class="_f399c0" id="">
+                                </span>
+                                <span class="_c1a300" id="">
+                                </span>
+                                <span class="_ffd800" id="">
+                                </span>
+                                <span class="_3458be" id="">
+                                </span>
+                                <span class="_985e34" id="">
+                                </span>
+                                <span class="_8d680e" id="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: inline-block; width: 100%;">
+                    <p id="your_choice">
+                        <span id="color_bottom_text_our">Вы выбрали потолок:</span>
+                        <span id="color_bottom"></span>
+                        <span id="color_bottom_text"></span>
+                    </p>
+                    <div id="measurement_dop_bottom">
+                        <div class="measurement_dop" id="go">
+                            Узнать стоимость
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="room_color">
+                <div style="display: block; position: relative; z-index: 10; padding: 0px; width: 800px; height: 500px; background: url(&quot;http://www.goodwin1.ru/wp-content/themes/seolead/podbor/ceiling.gif&quot;);"><canvas style="width: 800px; height: 500px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" height="500" width="800"></canvas><canvas style="position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;" width="800" height="500"></canvas><img id="ceiling" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/ceiling.gif" alt="" ismap="" usemap="#space" class="maphilighted" style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;"></div>
+                <img id="room_color_fon" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/room_color.png" alt="">
+                <img id="potolok" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/potolok.png" alt="" style="display: block;">
+                <img id="mat" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/mat.png" alt="" style="display: none;">
+                <img id="sateen" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/sateen.png" alt="" style="display: none;">
+                <img id="carpeting" src="http://www.goodwin1.ru/wp-content/themes/seolead/podbor/carpeting_bg.png" alt="">
+                <div id="wall"></div>
+                <div id="floor"></div>
+            </div>
+            <div class="clear"></div>
+            <map name="space">
+                <area id="area" shape="POLYGON" coords="0,97,173,184,189,184,194,186,659,186,659,119,800,27,800,500,771,500,658,437,658,383,173,383,49,438,31,438,0,451" nohref="">
+            </map>
+        </div>
+    </body>
+</html>
