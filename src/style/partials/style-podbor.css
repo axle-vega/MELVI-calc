@@ -162,14 +162,14 @@
 
 #content div#room_color {
 	width: 800px;
-	height: 500px;
+	height: 600px;
 	float: left;
 	position: relative;
 }
 
 #content div#room_color img#laminat {
 	width: 800px;
-	height: 500px;
+	height: 600px;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -218,7 +218,7 @@
 	top: 0px;
 	left: 0px;
 	width: 800px;
-	height: 500px;
+	height: 600px;
 	z-index: 20;
 }
 
@@ -227,7 +227,7 @@ img#ceiling {
 	top: 0px;
 	left: 0px;
 	width: 800px;
-	height: 500px;
+	height: 600px;
 	z-index: 10;
 }
 
@@ -319,12 +319,6 @@ img#ceiling {
     margin: -2px;
 }
 
-#content div#input_color .input_color_ceiling span div {
-	width: 12px;
-    border: 2px #000 solid;
-    padding: 0px;
-    margin: -2px;
-}
 
 #content div#input_color .input_color_floor span div {
 	width: 12px;
@@ -374,19 +368,13 @@ img#ceiling {
 }
 
 #content div#input_color .input_color_ceiling span {
-	width: 12px;
-    height: 13px;
-    display: inline-flex;
-    margin: 0px;
-    padding: 2px;
+	width: 35px;
+    height: 35px;
+    display: inline-block;
+    float: left;
+    margin: 2px;
+    padding: 0px;
     cursor: pointer;
-}
-
-#content div#input_color .input_color_ceiling span:hover {
-    padding: 3px;
-    width: 14px;
-    height: 15px;
-    margin: 1px -1px;
 }
 
 #content div#input_color .input_color_floor span {
@@ -1341,89 +1329,37 @@ img#ceiling {
 
 
 
-#content div#input_color .input_color_ceiling span._ffffff {
-	background: #ffffff;
+#content div#input_color .input_color_ceiling span {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-#content div#input_color .input_color_ceiling span._f8f7ec {
-	background: #f8f7ec;
+#content div#input_color .input_color_ceiling span._2261 {
+    background-image: url('../../img/vertical/avrora/_2261.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._e8efef {
-	background: #e8efef;
+#content div#input_color .input_color_ceiling span._0225 {
+	background-image: url('../../img/vertical/avrora/_0225.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._e0e8e8 {
-	background: #e0e8e8;
+#content div#input_color .input_color_ceiling span._5173 {
+	background-image: url('../../img/vertical/avrora/_5173.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._c1c9ca {
-	background: #c1c9ca;
+#content div#input_color .input_color_ceiling span._4221 {
+	background-image: url('../../img/vertical/avrora/_4221.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._093641 {
-	background: #093641;
+#content div#input_color .input_color_ceiling span._4059 {
+	background-image: url('../../img/vertical/avrora/_4059.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._221f1f {
-	background: #221f1f;
+#content div#input_color .input_color_ceiling span._5850 {
+	background-image: url('../../img/vertical/avrora/_5850.jpg');
 }
 
-#content div#input_color .input_color_ceiling span._af1116 {
-	background: #af1116;
-}
 
-#content div#input_color .input_color_ceiling span._dd312c {
-	background: #dd312c;
-}
-
-#content div#input_color .input_color_ceiling span._f3791f {
-	background: #f3791f;
-}
-
-#content div#input_color .input_color_ceiling span._b4882c {
-	background: #b4882c;
-}
-
-#content div#input_color .input_color_ceiling span._ffc10e {
-	background: #ffc10e;
-}
-
-#content div#input_color .input_color_ceiling span._859a3a {
-	background: #859a3a;
-}
-
-#content div#input_color .input_color_ceiling span._00642d {
-	background: #00642d;
-}
-
-#content div#input_color .input_color_ceiling span._2ca096 {
-	background: #2ca096;
-}
-
-#content div#input_color .input_color_ceiling span._2d89c9 {
-	background: #2d89c9;
-}
-
-#content div#input_color .input_color_ceiling span._2d3091 {
-	background: #2d3091;
-}
-
-#content div#input_color .input_color_ceiling span._6e6fb4 {
-	background: #6e6fb4;
-}
-
-#content div#input_color .input_color_ceiling span._90278e {
-	background: #90278e;
-}
-
-#content div#input_color .input_color_ceiling span._d33783 {
-	background: #d33783;
-}
-
-#content div#input_color .input_color_ceiling span._f399c0 {
-	background: #f399c0;
-}
 
 
 
@@ -1497,7 +1433,7 @@ img#ceiling {
 
 #content .addition_colors .left-colors,
 #content .addition_colors .right-colors {
-	width: 127px;
+	width: 100%;
     float: left;
     display: inline-block;
 }

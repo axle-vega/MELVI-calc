@@ -943,9 +943,16 @@ $(function() {
 	
 	$("#input_color .input_color_ceiling span").click(function(){
 		var color = $(this).attr("class");
+        var fNameID = $(this).parent(this).attr("id");
 		color = color.replace("_","");
 		$('#ceiling').maphilight({ fillColor: color });
+        $('#ceiling').css('background-image','url("../../img/vertical/'+fNameID+'/_'+color+'.jpg")');
+        $('#ceiling').css('background-size','10%');
+        $('#ceiling').css('opacity','1');
+        $('#factura').css('opacity','1');
+        $('#factura').css('background-image','url("../../img/vertical/'+fNameID+'/_'+color+'.jpg")');
 		$('#area').data('maphilight', data).trigger('alwaysOn.maphilight');
+        $('#area-2').data('maphilight', data).trigger('alwaysOn.maphilight');
 		$("#input_color .input_color_ceiling span").html("");
 		$(this).html("<div></div>");
 	});

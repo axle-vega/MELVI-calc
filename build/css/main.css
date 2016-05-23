@@ -1,4 +1,5 @@
 .ui-widget-content a,.ui-widget-header a{color:#fff}
+#content .measurement_dop,#form-order .h1{text-transform:uppercase;text-align:center}
 .ui-helper-hidden{display:none}
 .ui-helper-clearfix,.ui-icon{display:block}
 .ui-helper-hidden-accessible{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
@@ -288,17 +289,16 @@
 #form-order #form_arrow_r,#form-zvonok #form_arrow_r{position:absolute;height:32px;width:32px;bottom:1px;right:-49px}
 #form-order .bg_form table.form_cont,#form-zvonok .bg_form table.form_cont{font:14px Arial,sans-serif;color:#fff;padding-top:13px}
 #form-order .bg_form table.form_cont tr td.cont,#form-zvonok .bg_form table.form_cont tr td.cont{text-align:right;width:108px}
-#content .measurement_dop,#form-order .h1{text-transform:uppercase;text-align:center}
 td.cont span{position:relative}
 td.cont.require span:after{content:"*";position:absolute;right:-10px;font:700 20px Arial;color:#fff;top:-8px}
 #end,#end-order{display:none;position:relative}
 #form-order img.exit,#form-zvonok img.exit{position:absolute;width:28px;height:28px;top:5px;right:5px;cursor:pointer}
-#content div#room_color{width:800px;height:500px;float:left;position:relative}
-#content div#room_color img#laminat{width:800px;height:500px;position:absolute;bottom:0;left:0;display:none;z-index:30}
+#content div#room_color{width:800px;height:600px;float:left;position:relative}
+#content div#room_color img#laminat{width:800px;height:600px;position:absolute;bottom:0;left:0;display:none;z-index:30}
 #content div#room_color img#carpeting{width:800px;height:118px;position:absolute;bottom:0;left:0;z-index:30}
 #content div#room_color img#mat,#content div#room_color img#potolok,#content div#room_color img#sateen{width:800px;height:187px;position:absolute;top:0;left:0;z-index:30}
-#content div#room_color img#room_color_fon{position:absolute;top:0;left:0;width:800px;height:500px;z-index:20}
-img#ceiling{position:absolute;top:0;left:0;width:800px;height:500px;z-index:10}
+#content div#room_color img#room_color_fon{position:absolute;top:0;left:0;width:800px;height:600px;z-index:20}
+img#ceiling{position:absolute;top:0;left:0;width:800px;height:600px;z-index:10}
 #content div#input_color{background:#f6f6f6;height:500px;width:260px;float:left;padding:0 10px;margin-right:10px}
 #content div#input_color p.caption_group_color{font-size:16px;color:#000;padding-top:14px;margin-bottom:8px}
 #content div#input_color p.caption_group_color_dop{margin-bottom:8px}
@@ -310,14 +310,13 @@ img#ceiling{position:absolute;top:0;left:0;width:800px;height:500px;z-index:10}
 #content div#input_color p#wall_item span.act{font-size:14px;color:#000;border-bottom:none;cursor:default;font-weight:700}
 #content div#input_color p#floor_item{font-size:14px;margin-bottom:8px}
 #content div#input_color p#floor_item span{font-size:13px;color:#665227;cursor:pointer;border-bottom:dashed 1px #665227;margin-right:13px}
-#content div#input_color .input_color_ceiling span div,#content div#input_color .input_color_floor span div,#content div#input_color .input_color_wall span div{width:12px;border:2px solid #000;padding:0;margin:-2px}
+#content div#input_color .input_color_floor span div,#content div#input_color .input_color_wall span div{width:12px;border:2px solid #000;padding:0;margin:-2px}
 #content div#input_color p#floor_item span:hover{border-bottom:none}
 #content div#input_color p#floor_item span.act{font-size:14px;color:#000;border-bottom:none;cursor:default;font-weight:700}
 #content div#input_color .input_color_floor #laminate,#content div#input_color .input_color_wall #mat,#content div#input_color .input_color_wall #sateen{display:none}
 #content div#input_color .input_color_wall span{width:12px;height:13px;display:inline-flex;margin:0;padding:2px;cursor:pointer}
 #content div#input_color .input_color_wall span:hover{padding:3px;width:14px;height:15px;margin:1px -1px}
-#content div#input_color .input_color_ceiling span{width:12px;height:13px;display:inline-flex;margin:0;padding:2px;cursor:pointer}
-#content div#input_color .input_color_ceiling span:hover{padding:3px;width:14px;height:15px;margin:1px -1px}
+#content div#input_color .input_color_ceiling span{width:35px;height:35px;display:inline-block;float:left;margin:2px;padding:0;cursor:pointer}
 #content div#input_color .input_color_floor span{width:12px;height:13px;display:inline-flex;margin:0;padding:2px;cursor:pointer}
 #content div#input_color .input_color_floor span:hover{padding:3px;width:14px;height:15px;margin:1px -1px}
 #content div#input_color .input_color_ceiling,#content div#input_color .input_color_floor,#content div#input_color .input_color_wall .pollo{border:1px solid #D6D6D6;background-color:#fff;padding:7px}
@@ -545,27 +544,13 @@ img#ceiling{position:absolute;top:0;left:0;width:800px;height:500px;z-index:10}
 #content div#input_color .input_color_wall span._ffeeda{background:#ffeeda}
 #content div#input_color .input_color_wall span._eed9ae{background:#eed9ae}
 #content div#input_color .input_color_wall span._f7e5bf{background:#f7e5bf}
-#content div#input_color .input_color_ceiling span._ffffff{background:#fff}
-#content div#input_color .input_color_ceiling span._f8f7ec{background:#f8f7ec}
-#content div#input_color .input_color_ceiling span._e8efef{background:#e8efef}
-#content div#input_color .input_color_ceiling span._e0e8e8{background:#e0e8e8}
-#content div#input_color .input_color_ceiling span._c1c9ca{background:#c1c9ca}
-#content div#input_color .input_color_ceiling span._093641{background:#093641}
-#content div#input_color .input_color_ceiling span._221f1f{background:#221f1f}
-#content div#input_color .input_color_ceiling span._af1116{background:#af1116}
-#content div#input_color .input_color_ceiling span._dd312c{background:#dd312c}
-#content div#input_color .input_color_ceiling span._f3791f{background:#f3791f}
-#content div#input_color .input_color_ceiling span._b4882c{background:#b4882c}
-#content div#input_color .input_color_ceiling span._ffc10e{background:#ffc10e}
-#content div#input_color .input_color_ceiling span._859a3a{background:#859a3a}
-#content div#input_color .input_color_ceiling span._00642d{background:#00642d}
-#content div#input_color .input_color_ceiling span._2ca096{background:#2ca096}
-#content div#input_color .input_color_ceiling span._2d89c9{background:#2d89c9}
-#content div#input_color .input_color_ceiling span._2d3091{background:#2d3091}
-#content div#input_color .input_color_ceiling span._6e6fb4{background:#6e6fb4}
-#content div#input_color .input_color_ceiling span._90278e{background:#90278e}
-#content div#input_color .input_color_ceiling span._d33783{background:#d33783}
-#content div#input_color .input_color_ceiling span._f399c0{background:#f399c0}
+#content div#input_color .input_color_ceiling span{background-repeat:repeat;background-position:center;background-size:contain}
+#content div#input_color .input_color_ceiling span._2261{background-image:url(../img/vertical/avrora/_2261.jpg)}
+#content div#input_color .input_color_ceiling span._0225{background-image:url(../img/vertical/avrora/_0225.jpg)}
+#content div#input_color .input_color_ceiling span._5173{background-image:url(../img/vertical/avrora/_5173.jpg)}
+#content div#input_color .input_color_ceiling span._4221{background-image:url(../img/vertical/avrora/_4221.jpg)}
+#content div#input_color .input_color_ceiling span._4059{background-image:url(../img/vertical/avrora/_4059.jpg)}
+#content div#input_color .input_color_ceiling span._5850{background-image:url(../img/vertical/avrora/_5850.jpg)}
 #content div#input_color .input_color_floor #carpeting span._ffffff{background:#fff}
 #content div#input_color .input_color_floor #carpeting span._edc9af{background:#edc9af}
 #content div#input_color .input_color_floor #carpeting span._927b5c{background:#927b5c}
@@ -586,7 +571,7 @@ img#ceiling{position:absolute;top:0;left:0;width:800px;height:500px;z-index:10}
 #content div#input_color .input_color_floor #carpeting span._3458be{background:#3458be}
 #content div#input_color .input_color_floor #carpeting span._985e34{background:#985e34}
 #content div#input_color .input_color_floor #carpeting span._8d680e{background:#8d680e}
-#content .addition_colors .left-colors,#content .addition_colors .right-colors{width:127px;float:left;display:inline-block}
+#content .addition_colors .left-colors,#content .addition_colors .right-colors{width:100%;float:left;display:inline-block}
 #content p#your_choice{color:#F6F6F6;font-size:17px;margin-top:20px;font-weight:600;position:relative;margin-bottom:15px;width:100%}
 #content p#your_choice span.color_bottom_text_our_show{color:#000;margin-left:45px}
 #content p#your_choice span#color_bottom{width:30px;height:30px;display:inline-block;position:absolute;top:0;left:0}
@@ -633,3 +618,8 @@ ul.list_page li .list_img{display:inline-block;margin-right:50px;width:165px;hei
 #form-order .h1{font-size:24px;margin-bottom:0;font-weight:600;color:#842990}
 #form-order{background-color:#dadada;padding:20px;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;height:100%!important}
 #modal_form{z-index:1002;outline:0;width:330px!important;top:50%;margin-top:-170px;left:404px;height:340px}
+.cl{clear:both}
+#factura{width:200px;height:200px;position:absolute;bottom:15px;right:15px;border:5px solid #fff;border-radius:5px;z-index:1000;background:rgba(255,255,255,.6);opacity:0;background-position:center;background-size:contain}
+#factura #factura-name{position:absolute;bottom:0;left:0;right:0;height:20px;font-size:18px;background:#fff;color:#000;font-weight:700}
+#factura #factura-name p{margin:0;padding:0;width:100%;text-align:center}
+#content #input_color .input_color_ceiling .fname{display:none}
