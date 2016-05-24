@@ -34,10 +34,18 @@
 
 #content {
     #input_color {
+        #color_factura {
+            .name_category {display: none;}
+        }
         .input_color_ceiling {
             .fname {
                 display: none;
             }
+        }
+    }
+    #room_color {
+        #ceiling {
+            background-size: 10%;
         }
     }
 }

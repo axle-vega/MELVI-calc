@@ -622,4 +622,5 @@ ul.list_page li .list_img{display:inline-block;margin-right:50px;width:165px;hei
 #factura{width:200px;height:200px;position:absolute;bottom:15px;right:15px;border:5px solid #fff;border-radius:5px;z-index:1000;background:rgba(255,255,255,.6);opacity:0;background-position:center;background-size:contain}
 #factura #factura-name{position:absolute;bottom:0;left:0;right:0;height:20px;font-size:18px;background:#fff;color:#000;font-weight:700}
 #factura #factura-name p{margin:0;padding:0;width:100%;text-align:center}
-#content #input_color .input_color_ceiling .fname{display:none}
+#content #input_color #color_factura .name_category,#content #input_color .input_color_ceiling .fname{display:none}
+#content #room_color #ceiling{background-size:10%}
