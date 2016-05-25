@@ -73,6 +73,7 @@ $(document).ready(function () {
     
     
     // Массивы с цветами и текстурами тканей
+    
     // Вертикальные - Кельн
     var c_001 = [
         {'color_num': '0225'},
@@ -111,7 +112,38 @@ $(document).ready(function () {
         {'color_num': '5501'},
         {'color_num': '5850'},
     ];
-    
+    // Вертикальные - Мальта
+    var c_003 = [
+        {'color_num': '2259'},
+        {'color_num': '0225'},
+        {'color_num': '5992'},
+        {'color_num': '3465'},
+        {'color_num': '5102'},
+        {'color_num': '2840'},
+        {'color_num': '4221'},
+        {'color_num': '4240'},
+        {'color_num': '4082'},
+        {'color_num': '1608'},
+        {'color_num': '5850'},
+    ];
+    // Вертикальные - Сеул
+    var c_004 = [
+        {'color_num': '2261'},
+        {'color_num': '0225'},
+        {'color_num': '5102'},
+        {'color_num': '4221'},
+        {'color_num': '5501'},
+    ];
+    // Вертикальные - Диско
+    var c_005 = [
+        {'color_num': '2261'},
+        {'color_num': '0225'},
+        {'color_num': '3465'},
+        {'color_num': '4454'},
+        {'color_num': '3499'},
+        {'color_num': '4240'},
+        {'color_num': '4264'},
+    ];
     // Массив горизонтальных жалюзи
     
     var fHorizontal = [
@@ -188,6 +220,30 @@ $(document).ready(function () {
                 zhName = "lain";
                 for (i in c_002) {
                     $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_002[i].color_num+'.jpg)" class="'+c_002[i].color_num+'"></span>');
+                }
+            break;
+            case '003':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "malta";
+                for (i in c_003) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_003[i].color_num+'.jpg)" class="'+c_003[i].color_num+'"></span>');
+                }
+            break;
+            case '004':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "seul";
+                for (i in c_004) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_004[i].color_num+'.jpg)" class="'+c_004[i].color_num+'"></span>');
+                }
+            break;
+            case '005':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "disko";
+                for (i in c_005) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_005[i].color_num+'.jpg)" class="'+c_005[i].color_num+'"></span>');
                 }
             break;
             case '000':
