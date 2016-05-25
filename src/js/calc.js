@@ -71,6 +71,51 @@ $(document).ready(function () {
         {'pk': '052',    'cat': 'fCat_06',       'name': 'Крит'},
     ];
     
+    // Массив горизонтальных жалюзи
+    var fHorizontal = [
+        {'pk': '083',    'cat': 'fCat_01',       'name': '0225'}
+    ];
+    
+    // Массив горизонтальных жалюзи
+    var fZebra = [
+        // Категория 1
+        {'pk': '053',    'cat': 'fCat_01',       'name': 'Лён'},
+        {'pk': '054',    'cat': 'fCat_01',       'name': 'Кристалл'},
+        {'pk': '055',    'cat': 'fCat_01',       'name': 'Софт'},
+        {'pk': '056',    'cat': 'fCat_01',       'name': 'Степ'},
+        {'pk': '057',    'cat': 'fCat_01',       'name': 'Стандарт'},
+        // Категория 2
+        {'pk': '058',    'cat': 'fCat_02',       'name': 'Арабеска'},
+        {'pk': '059',    'cat': 'fCat_02',       'name': 'Бабочки'},
+        {'pk': '060',    'cat': 'fCat_02',       'name': 'Дакота'},
+        {'pk': '061',    'cat': 'fCat_02',       'name': 'Кофе'},
+        {'pk': '062',    'cat': 'fCat_02',       'name': 'Монтана'},
+        {'pk': '063',    'cat': 'fCat_02',       'name': 'Силуэт'},
+        {'pk': '064',    'cat': 'fCat_02',       'name': 'Тетрис'},
+        {'pk': '065',    'cat': 'fCat_02',       'name': 'Эллада'},
+        {'pk': '066',    'cat': 'fCat_02',       'name': 'Этник'},
+        // Категория 3
+        {'pk': '067',    'cat': 'fCat_03',       'name': 'Адажио'},
+        {'pk': '068',    'cat': 'fCat_03',       'name': 'Дамаск'},
+        {'pk': '069',    'cat': 'fCat_03',       'name': 'Мелланж'},
+        {'pk': '070',    'cat': 'fCat_03',       'name': 'Металлик'},
+        {'pk': '071',    'cat': 'fCat_03',       'name': 'Орнамент'},
+        {'pk': '072',    'cat': 'fCat_03',       'name': 'Палас'},
+        {'pk': '073',    'cat': 'fCat_03',       'name': 'Флекс'},
+        {'pk': '074',    'cat': 'fCat_03',       'name': 'Фрост'},
+        {'pk': '075',    'cat': 'fCat_03',       'name': 'Электра'},
+        // Категория 4
+        {'pk': '076',    'cat': 'fCat_04',       'name': 'Айленд'},
+        {'pk': '077',    'cat': 'fCat_04',       'name': 'Валенсия'},
+        {'pk': '078',    'cat': 'fCat_04',       'name': 'Дайкири'},
+        {'pk': '079',    'cat': 'fCat_04',       'name': 'Клетка'},
+        {'pk': '080',    'cat': 'fCat_04',       'name': 'Луксор трио'},
+        {'pk': '081',    'cat': 'fCat_04',       'name': 'Луксор уно'},
+        {'pk': '082',    'cat': 'fCat_04',       'name': 'Парма'},
+    ];
+    
+    
+    
     
     // Массивы с цветами и текстурами тканей
     
@@ -144,16 +189,55 @@ $(document).ready(function () {
         {'color_num': '4240'},
         {'color_num': '4264'},
     ];
-    // Массив горизонтальных жалюзи
     
-    var fHorizontal = [
-        {'pk': '011',    'cat': 'fCat_01',       'name': 'Аврора'},
-        {'pk': '012',    'cat': 'fCat_01',       'name': 'Юкка'},
-        {'pk': '013',    'cat': 'fCat_01',       'name': 'Лондон'},
-        {'pk': '014',    'cat': 'fCat_01',       'name': 'Стамбул'},
-        {'pk': '015',    'cat': 'fCat_01',       'name': 'Джаккарта'},
+    // Зебра - Лён
+    var c_053 = [
+        {'color_num': '2261'}
+    ];
+    // Зебра - Кристалл
+    var c_054 = [
+        {'color_num': '0225'},
+        {'color_num': '4077'},
+        {'color_num': '4290'},
+        {'color_num': '4824'},
+        {'color_num': '2261'},
+    ];
+    // Зебра - Софт
+    var c_055 = [
+        {'color_num': '0225'},
+        {'color_num': '3144'},
+        {'color_num': '4290'},
+        {'color_num': '2552'},
+        {'color_num': '3210'},
+        {'color_num': '2868'},
+        {'color_num': '4264'},
+    ];
+    // Зебра - Степ
+    var c_056 = [
+        {'color_num': '1852'},
+        {'color_num': '2406'}
+    ];
+    // Зебра - Стандарт
+    var c_057 = [
+        {'color_num': '0225'},
+        {'color_num': '2259'},
+        {'color_num': '2840'},
+        {'color_num': '2870'},
+        {'color_num': '4096'},
+        {'color_num': '4210'},
+        {'color_num': '4240'},
+        {'color_num': '4453'},
+        {'color_num': '4824'},
+        {'color_num': '5102'},
+        {'color_num': '5850'},
+        {'color_num': '5992'},
     ];
     
+    // Горизонтальные - 0225
+    var c_083 = [
+        {'color_num': '0225'}
+    ];    
+
     
     
     
@@ -174,9 +258,13 @@ $(document).ready(function () {
                     $('#f-select').append('<option class="'+fVertical[i].cat+'" value="'+fVertical[i].pk+'">'+fVertical[i].name+'</option>');
                 };
             break;
-            case 'horizontal': 
+            case 'horizontal':
                 zhType = "horizontal";
                 $('#f-select').css('display','block');
+                $('#map-photo').empty();
+                $('#map-photo').append('<area id="area" shape="POLYGON" coords="182,74,386,74,387,417,385,421,181,419,181,350,204,323,217,313,232,307,216,310,196,318,181,331" nohref="">');
+                $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="429,75,633,75,634,367,429,369" nohref="">');
+                $('#room_color_fon').attr('src','img/horizontal.png');
                 $('#f-select').append('<option value="000">Выберите ткань</option>');
                 for (i in fHorizontal) {
                     $('#f-select').append('<option class="'+fHorizontal[i].cat+'" value="'+fHorizontal[i].pk+'">'+fHorizontal[i].name+'</option>');
@@ -186,12 +274,15 @@ $(document).ready(function () {
                 zhType = "zebra";
                 $('#f-select').css('display','block');
                 $('#map-photo').empty();
-                $('#map-photo').append('<area id="area" shape="POLYGON" coords="94,0,281,65,283,266,6,228,5,218,11,220,11,205,5,205,6,184,11,186,11,172,6,171,8,0" nohref="">');
-                $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="559,152,799,142,799,242,560,246" nohref="">');
+                $('#map-photo').append('<area id="area" shape="POLYGON" coords="55,68,182,70,180,228,52,226" nohref="">');
+                $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="229,70,358,71,356,196,309,197,308,239,333,240,334,242,329,244,332,248,324,270,329,278,314,280,309,287,227,287" nohref="">');
+                $('#map-photo').append('<area id="area-3" shape="POLYGON" coords="404,72,533,208,404,208" nohref="">');
+                $('#map-photo').append('<area id="area-4" shape="POLYGON" coords="580,73,709,73,708,277,626,275,621,277,610,273,579,271" nohref="">');
+                $('#map-photo').append('<area id="area-5" shape="POLYGON" coords="341,240,355,240,355,286,351,286,343,277,347,269,340,253,340,247,341,243" nohref="">');
                 $('#room_color_fon').attr('src','img/zebra.png');
                 $('#f-select').append('<option value="000">Выберите ткань</option>');
-                for (i in fVertical) {
-                    $('#f-select').append('<option class="'+fVertical[i].cat+'" value="'+fVertical[i].pk+'">'+fVertical[i].name+'</option>');
+                for (i in fZebra) {
+                    $('#f-select').append('<option class="'+fZebra[i].cat+'" value="'+fZebra[i].pk+'">'+fZebra[i].name+'</option>');
                 };
             break;
             case 'nothing':
@@ -246,6 +337,62 @@ $(document).ready(function () {
                     $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_005[i].color_num+'.jpg)" class="'+c_005[i].color_num+'"></span>');
                 }
             break;
+                
+                
+                
+                
+            case '053':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "len";
+                for (i in c_053) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_053[i].color_num+'.jpg)" class="'+c_053[i].color_num+'"></span>');
+                }
+            break;
+            case '054':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "kristall";
+                for (i in c_054) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_054[i].color_num+'.jpg)" class="'+c_054[i].color_num+'"></span>');
+                }
+            break;
+            case '055':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "soft";
+                for (i in c_055) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_055[i].color_num+'.jpg)" class="'+c_055[i].color_num+'"></span>');
+                }
+            break;
+            case '056':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "step";
+                for (i in c_056) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_056[i].color_num+'.jpg)" class="'+c_056[i].color_num+'"></span>');
+                }
+            break;
+            case '057':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "standart";
+                for (i in c_057) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_057[i].color_num+'.jpg)" class="'+c_057[i].color_num+'"></span>');
+                }
+            break;
+                
+                
+                
+                
+            case '083':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "0225";
+                for (i in c_083) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_083[i].color_num+'.jpg)" class="'+c_083[i].color_num+'"></span>');
+                }
+            break;
             case '000':
                 $('#color_factura').empty();
                 $('#color_factura').css('display','none');
@@ -265,7 +412,9 @@ $(document).ready(function () {
             $('#factura').css('background-image','url("../../img/'+zhType+'/'+zhName+'/'+zhColor+'.jpg")');
             $('#area').data('maphilight', data).trigger('alwaysOn.maphilight');
             $('#area-2').data('maphilight', data).trigger('alwaysOn.maphilight');
-
+            $('#area-3').data('maphilight', data).trigger('alwaysOn.maphilight');
+            $('#area-4').data('maphilight', data).trigger('alwaysOn.maphilight');
+            $('#area-5').data('maphilight', data).trigger('alwaysOn.maphilight');
         });
         
     });
