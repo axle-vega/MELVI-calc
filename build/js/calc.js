@@ -1,8 +1,7 @@
 jQuery(document).ready(function () {
 
     var zhType, zhName, zhColor;
-        zhType = "vertical";
-        zhName = "avrora";
+
     
     
     var wall = "Глянцевый";
@@ -56,6 +55,10 @@ jQuery(document).ready(function () {
             case 'vertical':
                 zhType = "vertical";
                 $('#f-select').css('display','block');
+                $('#map-photo').empty();
+                $('#map-photo').append('<area id="area" shape="POLYGON" coords="163,75,165,290,168,329,174,318,174,285,181,285,181,312,184,320,189,310,198,310,207,334,204,352,355,358,353,56" nohref="">');
+                $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="540,39,546,367,742,379,749,369,754,371,750,18" nohref="">');
+                $('#room_color_fon').attr('src','img/vertical.png');
                 $('#f-select').append('<option value="000">Выберите ткань</option>');
                 for (i in fVertical) {
                     $('#f-select').append('<option class="'+fVertical[i].cat+'" value="'+fVertical[i].pk+'">'+fVertical[i].name+'</option>');
@@ -67,6 +70,18 @@ jQuery(document).ready(function () {
                 $('#f-select').append('<option value="000">Выберите ткань</option>');
                 for (i in fHorizontal) {
                     $('#f-select').append('<option class="'+fHorizontal[i].cat+'" value="'+fHorizontal[i].pk+'">'+fHorizontal[i].name+'</option>');
+                };
+            break;
+            case 'zebra':
+                zhType = "zebra";
+                $('#f-select').css('display','block');
+                $('#map-photo').empty();
+                $('#map-photo').append('<area id="area" shape="POLYGON" coords="94,0,281,65,283,266,6,228,5,218,11,220,11,205,5,205,6,184,11,186,11,172,6,171,8,0" nohref="">');
+                $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="559,152,799,142,799,242,560,246" nohref="">');
+                $('#room_color_fon').attr('src','img/zebra.png');
+                $('#f-select').append('<option value="000">Выберите ткань</option>');
+                for (i in fVertical) {
+                    $('#f-select').append('<option class="'+fVertical[i].cat+'" value="'+fVertical[i].pk+'">'+fVertical[i].name+'</option>');
                 };
             break;
             case 'nothing':

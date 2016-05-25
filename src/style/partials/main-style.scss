@@ -33,8 +33,13 @@
 }
 
 #content {
+    #f-select {
+        display: none;
+    }
     #input_color {
+        
         #color_factura {
+            display: none;
             .name_category {display: none;}
         }
         .input_color_ceiling {
