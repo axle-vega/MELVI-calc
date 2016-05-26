@@ -8,6 +8,75 @@ $(document).ready(function () {
 	data.alwaysOn = !data.alwaysOn;
 	$('#area').data('maphilight', data).trigger('alwaysOn.maphilight');
     
+    
+    
+    
+//    var Array = [
+//        ["vertical",        01,     "Кельн",    "keln",       [0225, 3321, 3321, 3334]],
+//        ["vertical",        01,     "Лайн",     "lain",       [0517, 5653, 6789, 0531]],
+//        ["horizontal",      02,     "Аврора",   "avrora",     [0041, 5551, 6245, 0225]]
+//    ]
+    
+    
+    
+    
+    var Types2 = [
+        "vertical",
+        "horizontal",
+        "zebra"
+    ];
+    var Names2 = [
+        ["Кельн","Лайн","Мальта"], 
+        ["Название 1","Название 2"],
+        ["Название 3","Название 4"]
+    ];
+    var Colors2 = [
+        [
+            ["0001", "0002", "0003", "0004"],
+            ["0005, 0006, 0007"],
+            ["0008, 0009, 0010"]
+        ],[
+            ["0001", "0002", "0003", "0004"],
+            ["0005, 0006, 0007"],
+            ["0008, 0009, 0010"]
+        ],[
+            ["0001", "0002", "0003", "0004"],
+            ["0005, 0006, 0007"],
+            ["0008, 0009, 0010"]
+        ],
+    ];
+    
+    
+    
+    
+    $('#t-select-2').on('change', function(){
+        for (i in Types2) {
+            switch($(this).val()){
+                case Types2[i]:
+                    $('#color_factura').empty();
+                    $('#color_factura').css('display','block');
+                    $('#f-select').empty();
+                    $('#f-select').css('display','block');
+                    $('#map-photo').empty();
+                    $('#map-photo').append('<area id="area" shape="POLYGON" coords="163,75,165,290,168,329,174,318,174,285,181,285,181,312,184,320,189,310,198,310,207,334,204,352,355,358,353,56" nohref="">');
+                    $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="540,39,546,367,742,379,749,369,754,371,750,18" nohref="">');
+                    $('#room_color_fon').attr('src','img/'+Types2[i]+'.png');
+                    $('#f-select').append('<option value="000">Выберите ткань</option>');
+                    for (j in Names2[i]) {
+                        $('#f-select').append('<option class="'+Names2[i][j]+'" value="'+Names2[i][j]+'">'+Names2[i][j]+'</option>');
+                    };
+                    
+                    
+//                    for (j in Names2[i]) {
+//                        $('#color_factura').append('<span style="background-image:url(../../img/'+Types2[i]+'/'+Names2[i][j]+'/'+Names2[i][j].color_num+'.jpg)" class="'+Names2[i][j].color_num+'"></span>');
+//                    }
+                break;
+            };
+        };
+    });
+   
+    
+    
     // Массив вертикальных жалюзи
 
     var fVertical = [
@@ -314,6 +383,115 @@ $(document).ready(function () {
         {'color_num': '4803'},
         {'color_num': '5608'},
     ];   
+    // Вертикальные - Аврора
+    var c_017 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4059'},
+        {'color_num': '4221'},
+        {'color_num': '5173'},
+        {'color_num': '5850'},
+    ];  
+    // Вертикальные - Аруба
+    var c_018 = [
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+    ];
+    // Вертикальные - Бейрут
+    var c_019 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4059'},
+    ];
+    // Вертикальные - Венера, золото-серебро
+    var c_020 = [
+        {'color_num': '0225'},
+    ];
+    // Вертикальные - Джангл
+    var c_021 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4082'},
+        {'color_num': '5102'},
+        {'color_num': '5850'},
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+        {'color_num': '7128'},
+        {'color_num': '7256'},
+        {'color_num': '7282'},
+    ];
+    // Вертикальные - Кобра
+    var c_022 = [
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+    ];
+    // Вертикальные - Модерн металлик
+    var c_023 = [
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+        {'color_num': '7128'},
+        {'color_num': '7256'},
+    ];
+    // Вертикальные - Оптима
+    var c_024 = [
+        {'color_num': '2261'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '4120'},
+        {'color_num': '5252'},
+        {'color_num': '5501'},
+        {'color_num': '5540'},
+    ];
+    // Вертикальные - Рококко
+    var c_025 = [
+        {'color_num': '1881'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '2870'},
+        {'color_num': '4454'},
+        {'color_num': '4803'},
+    ];
+    // Вертикальные - Саванна
+    var c_026 = [
+        {'color_num': '1881'},
+    ];
+    // Вертикальные - Сказка
+    var c_027 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '1881'},
+        {'color_num': '2261'},
+        {'color_num': '2868'},
+        {'color_num': '2868'},
+    ];
+    // Вертикальные - Сфера
+    var c_028 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '2261'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '2868'},
+        {'color_num': '2870'},
+        {'color_num': '2872'},
+        {'color_num': '3210'},
+        {'color_num': '4059'},
+        {'color_num': '4290'},
+        {'color_num': '5252'},
+        {'color_num': '5540'},
+        {'color_num': '5850'},
+    ];
+    // Вертикальные - Эйлат
+    var c_029 = [
+        {'color_num': '0225'},
+        {'color_num': '2406'},
+    ];
+    // Вертикальные - Ратан
+    var c_030 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+    ];
+    
     
     
     
@@ -424,7 +602,17 @@ $(document).ready(function () {
     });
     
     
+
+    
+    
+    
     $("#f-select").on('change', function(){
+        
+        
+        
+        
+        
+/*
         switch($(this).val()){
             case '001':
                 $('#color_factura').empty();
@@ -554,7 +742,38 @@ $(document).ready(function () {
                     $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_016[i].color_num+'.jpg)" class="'+c_016[i].color_num+'"></span>');
                 }
             break;
-                
+            case '017':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "avrora";
+                for (i in c_017) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_017[i].color_num+'.jpg)" class="'+c_017[i].color_num+'"></span>');
+                }
+            break;
+            case '018':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "aruba";
+                for (i in c_018) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_018[i].color_num+'.jpg)" class="'+c_018[i].color_num+'"></span>');
+                }
+            break;
+            case '019':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "beirut";
+                for (i in c_019) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_019[i].color_num+'.jpg)" class="'+c_019[i].color_num+'"></span>');
+                }
+            break;
+            case '020':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "venerazoloto";
+                for (i in c_020) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_020[i].color_num+'.jpg)" class="'+c_020[i].color_num+'"></span>');
+                }
+            break;
                 
                 
                 
@@ -615,9 +834,9 @@ $(document).ready(function () {
             case '000':
                 $('#color_factura').empty();
                 $('#color_factura').css('display','none');
-            break;
+            break; 
         };
-
+*/
         
         
         
@@ -637,111 +856,5 @@ $(document).ready(function () {
         });
         
     });
-    
-    
-    
-
-
-
-	
-//	function replaceAll(str, what, to) { 
-//	   return str.split(what).join(to); 
-//	} 
-	
-
-	
-	
-//	$("#input_color p#wall_item span").click(function(){
-//		$("#input_color p#wall_item span").removeClass("act");
-//		var id = $(this).addClass("act").attr("id");
-//		wall = $(this).text();
-//		$("#input_color .input_color_wall div.pollo").hide();
-//		id = id.replace("_point","");
-//		$("#input_color .input_color_wall div#"+id).show();
-//		if(id == "lacquered") {
-//			$("img#potolok").show();
-//		} else {
-//			$("img#potolok").hide();
-//		}
-//		if(id == "mat") {
-//			$("img#mat").show();
-//		} else {
-//			$("img#mat").hide();
-//		}
-//		if(id == "sateen") {
-//			$("img#sateen").show();
-//		} else {
-//			$("img#sateen").hide();
-//		}
-//	});
-	
-//	$("#input_color .input_color_wall span").click(function(){
-//		var color = $(this).attr("class");
-//		color = color.replace("_","");
-//		var text = $(this).attr("id");
-//		ColorText = replaceAll(text,"_"," ");
-//		$("#room_color #wall").css("background","#"+color);
-//		$("p#your_choice span#color_bottom").css("background","#"+color).addClass("color_bottom_shadow");
-//		$("p#your_choice span#color_bottom_text_our").addClass("color_bottom_text_our_show");
-//		$(".measurement_dop").show();
-//		$("p#your_choice span#color_bottom_text").text(wall+" ("+ColorText+")");
-//		$("#input_color .input_color_wall span").html("");
-//		$(this).html("<div></div>");
-//	});
-	
-//	$("#input_color .input_color_floor span").click(function(){
-//		var color = $(this).attr("class");
-//		color = color.replace("_","");
-//		$("#room_color #floor").css("background","#"+color);
-//		$("#input_color .input_color_floor span").html("");
-//		$(this).html("<div></div>");
-//	});
-	
-
-	
-//	$("#input_color p#floor_item span").click(function(){
-//		$("#input_color p#floor_item span").removeClass("act");
-//		var id = $(this).addClass("act").attr("id");
-//		if(id == "laminate_point") {
-//			$("img#laminat").show();
-//			$("img#carpeting").hide();
-//			$("#input_color .input_color_floor #laminate").show();
-//			$("#input_color .input_color_floor #carpeting").hide();
-//		} else {
-//			$("img#laminat").hide();
-//			$("img#carpeting").show();
-//			$("#input_color .input_color_floor #laminate").hide();
-//			$("#input_color .input_color_floor #carpeting").show();
-//		}
-//	});
-	
-//	$(".measurement_dop").hover(
-//
-//        function(){
-//            $(this).addClass("measurement_dop_hov");
-//        },
-//        function(){
-//            $(this).removeClass("measurement_dop_hov");
-//        }
-//
-//    );
-//	
-//	$(".measurement_dop").click(function(){
-//        jQuery('.additional-info').remove();
-//		$("div#podbor textarea").val("Мне понравился "+wall+" потолок цвета «"+ColorText+"»");
-//
-//		$("div#form-order").dialog({
-//
-//			position: ["center","center"],
-//			bgiframe: true,
-//			modal: true,
-//			width: 330,
-//			closeText: "X"
-//
-//		});
-//
-//        return false;
-//
-//    });
-	
+    	
 });
