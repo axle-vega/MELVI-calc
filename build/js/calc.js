@@ -189,6 +189,135 @@ $(document).ready(function () {
         {'color_num': '4240'},
         {'color_num': '4264'},
     ];
+    // Вертикальные - Бали
+    var c_006 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '2746'},
+        {'color_num': '2871'},
+        {'color_num': '3499'},
+        {'color_num': '4059'},
+        {'color_num': '4096'},
+        {'color_num': '4201'},
+        {'color_num': '4210'},
+        {'color_num': '4290'},
+        {'color_num': '4454'},
+        {'color_num': '4803'},
+        {'color_num': '5102'},
+        {'color_num': '5173'},
+        {'color_num': '5253'},
+        {'color_num': '5302'},
+        {'color_num': '5612'},
+        {'color_num': '5713'},
+        {'color_num': '5850'},
+        {'color_num': '5992'},
+        {'color_num': '7013'},
+    ];
+    // Вертикальные - Венера
+    var c_007 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '4059'},
+        {'color_num': '4120'},
+        {'color_num': '4240'},
+        {'color_num': '4803'},
+        {'color_num': '5992'},
+        {'color_num': '7005'},
+        {'color_num': '7125'},
+    ];
+    // Вертикальные - Жаккард №1
+    var c_008 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '2868'},
+        {'color_num': '4240'},
+    ];
+    // Вертикальные - Зодиак
+    var c_009 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4059'},
+        {'color_num': '4803'},
+        {'color_num': '5501'},
+    ];
+    // Вертикальные - Милан
+    var c_010 = [
+        {'color_num': '0225'},
+        {'color_num': '4082'},
+        {'color_num': '4221'},
+        {'color_num': '5332'},
+    ];
+    // Вертикальные - Рейн
+    var c_011 = [
+        {'color_num': '0225'},
+        {'color_num': '2802'},
+        {'color_num': '2870'},
+        {'color_num': '3209'},
+        {'color_num': '4240'},
+        {'color_num': '4264'},
+        {'color_num': '5501'},
+    ];
+    // Вертикальные - Рио
+    var c_012 = [
+        {'color_num': '0225'},
+        {'color_num': '2746'},
+        {'color_num': '2840'},
+        {'color_num': '2854'},
+        {'color_num': '2871'},
+        {'color_num': '3465'},
+        {'color_num': '4077'},
+        {'color_num': '4210'},
+        {'color_num': '4221'},
+        {'color_num': '4240'},
+        {'color_num': '4290'},
+        {'color_num': '4454'},
+        {'color_num': '4824'},
+        {'color_num': '5173'},
+        {'color_num': '5470'},
+        {'color_num': '5921'},
+        {'color_num': '5992'},
+    ];
+    // Вертикальные - Сиде
+    var c_013 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '2406'},
+        {'color_num': '2865'},
+        {'color_num': '3465'},
+        {'color_num': '4300'},
+        {'color_num': '4454'},
+        {'color_num': '4803'},
+        {'color_num': '4858'},
+        {'color_num': '5252'},
+        {'color_num': '5586'},
+    ];
+    // Вертикальные - Твист
+    var c_014 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '1908'},
+        {'color_num': '2259'},
+        {'color_num': '4210'},
+        {'color_num': '4221'},
+        {'color_num': '4240'},
+        {'color_num': '5992'},
+    ];
+    // Вертикальные - Юкка
+    var c_015 = [
+        {'color_num': '0225'},
+    ];    
+    // Вертикальные - Эдем
+    var c_016 = [
+        {'color_num': '0225'},
+        {'color_num': '4803'},
+        {'color_num': '5608'},
+    ];   
+    
+    
+    
+    
     
     // Зебра - Лён
     var c_053 = [
@@ -337,6 +466,96 @@ $(document).ready(function () {
                     $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_005[i].color_num+'.jpg)" class="'+c_005[i].color_num+'"></span>');
                 }
             break;
+            case '006':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "bali";
+                for (i in c_006) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_006[i].color_num+'.jpg)" class="'+c_006[i].color_num+'"></span>');
+                }
+            break;
+            case '007':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "venera";
+                for (i in c_007) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_007[i].color_num+'.jpg)" class="'+c_007[i].color_num+'"></span>');
+                }
+            break;
+            case '008':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "zhakkard";
+                for (i in c_008) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_008[i].color_num+'.jpg)" class="'+c_008[i].color_num+'"></span>');
+                }
+            break;
+            case '009':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "zodiak";
+                for (i in c_009) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_009[i].color_num+'.jpg)" class="'+c_009[i].color_num+'"></span>');
+                }
+            break;
+            case '010':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "milan";
+                for (i in c_010) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_010[i].color_num+'.jpg)" class="'+c_010[i].color_num+'"></span>');
+                }
+            break;
+            case '011':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "rein";
+                for (i in c_011) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_011[i].color_num+'.jpg)" class="'+c_011[i].color_num+'"></span>');
+                }
+            break;
+            case '012':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "rio";
+                for (i in c_012) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_012[i].color_num+'.jpg)" class="'+c_012[i].color_num+'"></span>');
+                }
+            break;
+            case '013':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "side";
+                for (i in c_013) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_013[i].color_num+'.jpg)" class="'+c_013[i].color_num+'"></span>');
+                }
+            break;
+            case '014':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "tvist";
+                for (i in c_014) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_014[i].color_num+'.jpg)" class="'+c_014[i].color_num+'"></span>');
+                }
+            break;
+            case '015':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "yukka";
+                for (i in c_015) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_015[i].color_num+'.jpg)" class="'+c_015[i].color_num+'"></span>');
+                }
+            break;
+            case '016':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "edem";
+                for (i in c_016) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_016[i].color_num+'.jpg)" class="'+c_016[i].color_num+'"></span>');
+                }
+            break;
+                
+                
                 
                 
                 
