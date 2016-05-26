@@ -25,14 +25,24 @@ $(document).ready(function () {
         "horizontal",
         "zebra"
     ];
+    var Cat2 = [
+        ["01", "01", "02"],
+        ["01", "02", "03"],
+        ["01", "01", "02"]
+    ];
+    var NamesLat = [
+        ["keln", "lain", "malta"],
+        ["naz 1", "naz 2", "naz 3"],
+        ["keln", "lain", "malta"]
+    ];
     var NamesRus = [
-        ["Кельн","Лайн","Мальта"], 
-        ["Название 1","Название 2"],
-        ["Название 3","Название 4"]
+        ["Кельн", "Лайн", "Мальта"], 
+        ["Название 1", "Название 2"],
+        ["Название 3", "Название 4"]
     ];
     var Colors2 = [
         [
-            ["0001", "0002", "0003", "0004"],
+            ["0225", "2261", "3204", "4077"],
             ["0005, 0006, 0007"],
             ["0008, 0009, 0010"]
         ],[
@@ -46,15 +56,14 @@ $(document).ready(function () {
         ],
     ];
     
-    
+    var vName;
+    var vCount;
     
     
     $('#t-select-2').on('change', function(){
         for (i in Types2) {
             switch($(this).val()){
                 case Types2[i]:
-                    $('#color_factura').empty();
-                    $('#color_factura').css('display','block');
                     $('#f-select').empty();
                     $('#f-select').css('display','block');
                     $('#map-photo').empty();
@@ -62,14 +71,27 @@ $(document).ready(function () {
                     $('#map-photo').append('<area id="area-2" shape="POLYGON" coords="540,39,546,367,742,379,749,369,754,371,750,18" nohref="">');
                     $('#room_color_fon').attr('src','img/'+Types2[i]+'.png');
                     $('#f-select').append('<option value="000">Выберите ткань</option>');
-                    for (j in Names2[i]) {
-                        $('#f-select').append('<option class="'+Names2[i][j]+'" value="'+Names2[i][j]+'">'+Names2[i][j]+'</option>');
+                    for (j in NamesLat[i]) {
+                        $('#f-select').append('<option class="'+Cat2[i][j]+'" value="'+NamesLat[i][j]+'">'+NamesRus[i][j]+'</option>');
                     };
+                    vName = Types2[i];
+                    vCount = $.inArray(Types2[i], Types2);
+                break;
+            };
+        };
+        console.log(vCount + ' - ' + vName);
+    });
+    
+    $('#f-select').on('change', function(){
+        for (i in NamesLat[vCount]) {
+            switch($(this).val()){
+                case NamesLat[vCount][i]:
                     
-                    
-//                    for (j in Names2[i]) {
-//                        $('#color_factura').append('<span style="background-image:url(../../img/'+Types2[i]+'/'+Names2[i][j]+'/'+Names2[i][j].color_num+'.jpg)" class="'+Names2[i][j].color_num+'"></span>');
-//                    }
+                    $('#color_factura').empty();
+                    for (j in Colors2[vCount][i]) {
+                        $('#color_factura').css('display','block');
+                        $('#color_factura').append('<span style="background-image:url(../../img/'+Types2[vCount]+'/'+NamesLat[vCount][i]+'/'+Colors2[vCount][i][j]+'.jpg)" class="'+Colors2[vCount][i][j]+'"></span>');                        
+                    };
                 break;
             };
         };
@@ -605,14 +627,14 @@ $(document).ready(function () {
 
     
     
-    
+  /*  
     $("#f-select").on('change', function(){
         
         
         
         
         
-/*
+
         switch($(this).val()){
             case '001':
                 $('#color_factura').empty();
@@ -836,7 +858,7 @@ $(document).ready(function () {
                 $('#color_factura').css('display','none');
             break; 
         };
-*/
+
         
         
         
@@ -856,7 +878,7 @@ $(document).ready(function () {
         });
         
     });
-    	
+    	*/
 });
 
     
