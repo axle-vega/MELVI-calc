@@ -314,6 +314,115 @@ $(document).ready(function () {
         {'color_num': '4803'},
         {'color_num': '5608'},
     ];   
+    // Вертикальные - Аврора
+    var c_017 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4059'},
+        {'color_num': '4221'},
+        {'color_num': '5173'},
+        {'color_num': '5850'},
+    ];  
+    // Вертикальные - Аруба
+    var c_018 = [
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+    ];
+    // Вертикальные - Бейрут
+    var c_019 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4059'},
+    ];
+    // Вертикальные - Венера, золото-серебро
+    var c_020 = [
+        {'color_num': '0225'},
+    ];
+    // Вертикальные - Джангл
+    var c_021 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+        {'color_num': '4082'},
+        {'color_num': '5102'},
+        {'color_num': '5850'},
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+        {'color_num': '7128'},
+        {'color_num': '7256'},
+        {'color_num': '7282'},
+    ];
+    // Вертикальные - Кобра
+    var c_022 = [
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+    ];
+    // Вертикальные - Модерн металлик
+    var c_023 = [
+        {'color_num': '7013'},
+        {'color_num': '7125'},
+        {'color_num': '7128'},
+        {'color_num': '7256'},
+    ];
+    // Вертикальные - Оптима
+    var c_024 = [
+        {'color_num': '2261'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '4120'},
+        {'color_num': '5252'},
+        {'color_num': '5501'},
+        {'color_num': '5540'},
+    ];
+    // Вертикальные - Рококко
+    var c_025 = [
+        {'color_num': '1881'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '2870'},
+        {'color_num': '4454'},
+        {'color_num': '4803'},
+    ];
+    // Вертикальные - Саванна
+    var c_026 = [
+        {'color_num': '1881'},
+    ];
+    // Вертикальные - Сказка
+    var c_027 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '1881'},
+        {'color_num': '2261'},
+        {'color_num': '2868'},
+        {'color_num': '2868'},
+    ];
+    // Вертикальные - Сфера
+    var c_028 = [
+        {'color_num': '0225'},
+        {'color_num': '1608'},
+        {'color_num': '2261'},
+        {'color_num': '2406'},
+        {'color_num': '2746'},
+        {'color_num': '2868'},
+        {'color_num': '2870'},
+        {'color_num': '2872'},
+        {'color_num': '3210'},
+        {'color_num': '4059'},
+        {'color_num': '4290'},
+        {'color_num': '5252'},
+        {'color_num': '5540'},
+        {'color_num': '5850'},
+    ];
+    // Вертикальные - Эйлат
+    var c_029 = [
+        {'color_num': '0225'},
+        {'color_num': '2406'},
+    ];
+    // Вертикальные - Ратан
+    var c_030 = [
+        {'color_num': '0225'},
+        {'color_num': '2261'},
+    ];
+    
     
     
     
@@ -554,7 +663,38 @@ $(document).ready(function () {
                     $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_016[i].color_num+'.jpg)" class="'+c_016[i].color_num+'"></span>');
                 }
             break;
-                
+            case '017':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "avrora";
+                for (i in c_017) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_017[i].color_num+'.jpg)" class="'+c_017[i].color_num+'"></span>');
+                }
+            break;
+            case '018':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "aruba";
+                for (i in c_018) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_018[i].color_num+'.jpg)" class="'+c_018[i].color_num+'"></span>');
+                }
+            break;
+            case '019':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "beirut";
+                for (i in c_019) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_019[i].color_num+'.jpg)" class="'+c_019[i].color_num+'"></span>');
+                }
+            break;
+            case '020':
+                $('#color_factura').empty();
+                $('#color_factura').css('display','block');
+                zhName = "venerazoloto";
+                for (i in c_020) {
+                    $('#color_factura').append('<span style="background-image:url(../../img/'+zhType+'/'+zhName+'/'+c_020[i].color_num+'.jpg)" class="'+c_020[i].color_num+'"></span>');
+                }
+            break;
                 
                 
                 
