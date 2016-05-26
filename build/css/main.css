@@ -1,5 +1,4 @@
 .ui-widget-content a,.ui-widget-header a{color:#fff}
-#content .measurement_dop,#form-order .h1{text-transform:uppercase;text-align:center}
 .ui-helper-hidden{display:none}
 .ui-helper-clearfix,.ui-icon{display:block}
 .ui-helper-hidden-accessible{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
@@ -576,7 +575,7 @@ img#ceiling{position:absolute;top:0;left:0;width:800px;height:600px;z-index:10}
 #content p#your_choice span.color_bottom_text_our_show{color:#000;margin-left:45px}
 #content p#your_choice span#color_bottom{width:30px;height:30px;display:inline-block;position:absolute;top:0;left:0}
 #content p#your_choice span#color_bottom_text{margin-left:45px;font-size:15px;color:#000}
-#content .measurement_dop{transition:color .3s ease-in-out,background-color .3s ease-in-out;-moz-transition:color .3s ease-in-out,background-color .3s ease-in-out;-webkit-transition:color .3s ease-in-out,background-color .3s ease-in-out;-ms-transition:color .3s ease-in-out,background-color .3s ease-in-out;color:#fff;background-color:#8E0796;font-weight:700;padding:10px;cursor:pointer;display:none;margin:0 auto}
+#content .measurement_dop{transition:color .3s ease-in-out,background-color .3s ease-in-out;-moz-transition:color .3s ease-in-out,background-color .3s ease-in-out;-webkit-transition:color .3s ease-in-out,background-color .3s ease-in-out;-ms-transition:color .3s ease-in-out,background-color .3s ease-in-out;color:#fff;background-color:#8E0796;font-weight:700;text-transform:uppercase;padding:10px;text-align:center;cursor:pointer;display:none;margin:0 auto}
 #content .measurement_dop_hov{color:#8E0796;background-color:#fff;border:2px solid #8E0796;padding:8px}
 #content #measurement_dop_bottom{height:45px}
 #fixed_footer{background-color:rgba(24,66,118,.9);position:fixed;width:100%;height:63px;bottom:0;left:0;z-index:1000;box-shadow:1px 1px 20px rgba(0,0,0,.63);-moz-box-shadow:1px 1px 20px rgba(0,0,0,.63);-webkit-box-shadow:1px 1px 20px rgba(0,0,0,.63)}
@@ -615,12 +614,13 @@ ul.list_page li .list_img{display:inline-block;margin-right:50px;width:165px;hei
 #header #slogan p.name_zvonok:hover{background:#00406F;color:#fff}
 #header #slogan p.name_zvonok:before{content:'';border:5px solid transparent;border-bottom-color:#F3EDBA;position:absolute;top:-10px;left:50%;margin-left:-5px}
 #header #slogan p.name_zvonok:hover:before{border-bottom-color:#00406F}
-#form-order .h1{font-size:24px;margin-bottom:0;font-weight:600;color:#842990}
+#form-order .h1{font-size:24px;margin-bottom:0;font-weight:600;text-transform:uppercase;color:#842990;text-align:center}
 #form-order{background-color:#dadada;padding:20px;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;height:100%!important}
 #modal_form{z-index:1002;outline:0;width:330px!important;top:50%;margin-top:-170px;left:404px;height:340px}
 .cl{clear:both}
 #factura{width:200px;height:200px;position:absolute;bottom:15px;right:15px;border:5px solid #fff;border-radius:5px;z-index:1000;background:rgba(255,255,255,.6);opacity:0;background-position:center;background-size:contain}
 #factura #factura-name{position:absolute;bottom:0;left:0;right:0;height:20px;font-size:18px;background:#fff;color:#000;font-weight:700}
 #factura #factura-name p{margin:0;padding:0;width:100%;text-align:center}
-#content #f-select,#content #input_color #color_factura,#content #input_color #color_factura .name_category,#content #input_color .input_color_ceiling .fname{display:none}
+#content #f-select,#content #input_color #color_factura,#content #input_color #color_factura .name_category,#content #input_color #factura-label,#content #input_color .input_color_ceiling .fname{display:none}
+#content #input_color select{width:100%;padding:7px;margin:10px 0 0}
 #content #room_color #ceiling{background-size:2%}
